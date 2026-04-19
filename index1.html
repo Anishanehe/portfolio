@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisha Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.about, .skills, .projects, .contact{
+    max-width:900px;
+    margin:auto;
+}
+
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#1e3a8a;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+}
+
+.project-box{
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav a{
+        display:block;
+        margin:8px 0;
+    }
+
+    .skills-list{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anisha</h1>
+    <p>Web Developer | Designer | Student</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Anisha, passionate about creating beautiful and responsive websites using HTML, CSS, and JavaScript. I love learning new technologies and building creative projects.</p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">React</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio website.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Weather App</h3>
+        <p>Weather app using JavaScript API integration.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>To-Do List</h3>
+        <p>Task management app with local storage.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: neheanisha67@gmail.com</p>
+    <p>Phone: +91 8530928065</p>
+    <button onclick="showMessage()">Say Hello</button>
+</section>
+
+<footer>
+    <p>© 2026 Anisha | All Rights Reserved</p>
+</footer>
+
+<script>
+function showMessage(){
+    alert("Thank you for visiting Anisha's Portfolio!");
+}
+</script>
+
+</body>
+</html>
